@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# VS Code
+.vscode/
+
+# Large Video Files (GitHub has a 100MB limit)
+*.mp4
+*.avi
