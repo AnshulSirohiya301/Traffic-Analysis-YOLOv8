@@ -1,4 +1,5 @@
 import cv2
+import os
 
 roi_points = []
 
@@ -9,7 +10,8 @@ def get_coordinates(event, x, y, flags, param):
         cv2.circle(frame, (x, y), 5, (0, 0, 255), -1)
         cv2.imshow("Click your 4 ROI points", frame)
 
-cap = cv2.VideoCapture(r"C:\Users\anshu\OneDrive\Desktop\TLA\highway_test.mp4")
+video_path = os.path.join(os.path.dirname(__file__), '..', 'highway_test.mp4')
+cap = cv2.VideoCapture(video_path)
 success, frame = cap.read()
 cap.release()
 

@@ -1,13 +1,14 @@
 import cv2
 import numpy as np
 import math
+import os
 from ultralytics import YOLO
 
 
 print("Loading YOLOv8s AI Model...")
 model = YOLO('yolov8s.pt') 
 
-video_path = r"C:\Users\anshu\OneDrive\Desktop\TLA\highway_test.mp4"
+video_path = os.path.join(os.path.dirname(__file__), '..', 'highway_test.mp4')
 cap = cv2.VideoCapture(video_path)
 fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
 
