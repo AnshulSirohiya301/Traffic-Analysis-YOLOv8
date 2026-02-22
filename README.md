@@ -1,5 +1,7 @@
 # 🚦 Traffic Analysis using YOLOv8s
 
+![Traffic Analysis Demo](demo.gif)
+
 An enterprise-grade, 6-lane bi-directional traffic analytics pipeline powered by Computer Vision. This project utilizes YOLOv8 for vehicle tracking and classification, combined with OpenCV perspective transformation (Homography) to accurately estimate real-world vehicle speeds without camera distortion.
 
 ## ✨ Key Features
